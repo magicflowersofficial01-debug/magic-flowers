@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff8f4">
+<title>Magic Flowers | Fresh Flowers, Bouquets, Decorations & Gifts in Bhopal</title>
+<link rel="icon" href="logo.jpeg" type="image/jpeg">
+<link rel="apple-touch-icon" href="logo.jpeg">
+<meta property="og:title" content="Magic Flowers | Fresh Flowers & Decorations in Bhopal">
+<meta property="og:description" content="Shop fresh flower bouquets, birthday decorations, wedding setups and gifts. Order on WhatsApp.">
+<meta property="og:image" content="logo.jpeg">
+<meta property="og:type" content="website">
+<meta name="description" content="Shop fresh flower bouquets, arrangements, birthday decorations, wedding & puja setups, chocolates and gifts from Magic Flowers, Bhopal. Order on WhatsApp.">
+<style>
+:root{--wine:#7a2f45;--soft:#fff8f4;--line:#f0e4e0;--text:#3a2a2e;--muted:#7a6369}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--soft);color:var(--text);line-height:1.45}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.shell{width:min(100% - 40px,1400px);margin:0 auto}
+header{height:76px;background:rgba(255,250,247,.96);position:sticky;top:0;z-index:30;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:28px;letter-spacing:-.02em;color:var(--wine)}
+.brand-logo{width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid #f3d9df}
+.navlinks{display:flex;gap:22px;font-size:14px;color:#5c4450}
+.navlinks a:hover{color:var(--wine)}
+.wa-top{background:var(--wine);color:#fff;border:0;border-radius:999px;padding:12px 18px;font-weight:700;font-size:13px;cursor:pointer}
+.menu{display:none;background:none;border:0;font-size:24px}
+.hero{position:relative;min-height:420px;background:linear-gradient(120deg,#7a2f45 0%,#a94d68 45%,#d27a8f 100%);color:#fff;overflow:hidden}
+.hero-inner{min-height:420px;display:grid;align-items:center}
+.hero-copy{padding:50px 0;max-width:640px}
+.hero .eyebrow{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:999px;font-size:12px;margin-bottom:14px}
+.hero h1{font-size:clamp(34px,5vw,54px);line-height:1.05;margin-bottom:12px;letter-spacing:-.03em}
+.hero p{font-size:16px;opacity:.95;max-width:520px;margin-bottom:22px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:13px 20px;font-weight:700;font-size:14px;border:0;cursor:pointer}
+.btn-white{background:#fff;color:var(--wine)}
+.btn-outline{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.45)}
+.hero-perks{display:flex;flex-wrap:wrap;gap:18px;font-size:13px;opacity:.95}
+.section{padding:55px 0}
+.catalog-head{text-align:center;margin-bottom:22px}
+.eyebrow{color:var(--wine);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
+.catalog-head h2,.how-title,.about h2,.contact h2{font-size:clamp(28px,4vw,40px);letter-spacing:-.03em}
+.catalog-head p{color:var(--muted);max-width:560px;margin:8px auto 0}
+.search-row{display:flex;justify-content:center;margin-bottom:18px}
+.searchbox{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:12px 18px;width:min(100%,480px);box-shadow:0 8px 24px rgba(122,47,69,.04)}
+.searchbox input{border:0;outline:0;width:100%;font-size:15px;background:transparent}
+.filters{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:0 auto 26px}
+.filter{border:1px solid #e4cfd2;background:#fffaf8;border-radius:24px;padding:10px 18px;color:#604650;cursor:pointer;font-size:13px;transition:.2s}
+.filter.active,.filter:hover{background:var(--wine);border-color:var(--wine);color:white}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 10px 30px rgba(122,47,69,.05);display:flex;flex-direction:column}
+.photo{border:0;background:#f7ece8;cursor:pointer;padding:0;height:220px;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.card:hover .photo img{transform:scale(1.04)}
+.card-info{padding:14px 14px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card-type{font-size:11px;font-weight:700;color:var(--wine);text-transform:uppercase;letter-spacing:.06em}
+.card h3{font-size:18px;line-height:1.2;min-height:44px}
+.price-line{display:flex;align-items:center;gap:8px}
+.price{font-size:18px;font-weight:800;color:#1f1a1c}
+.ask{font-size:15px;font-weight:700;color:var(--wine)}
+.old{color:#9a7f87;font-size:13px}
+.card .order-btn{margin-top:auto;width:100%;border:0;background:var(--wine);color:#fff;border-radius:14px;padding:11px 8px;font-weight:700;font-size:13px;cursor:pointer}
+.no-results{display:none;text-align:center;padding:30px;color:var(--muted)}
+.how{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:40px 0}
+.how-grid{display:grid;grid-template-columns:1.2fr repeat(3,1fr);gap:18px;align-items:center}
+.how-title{font-size:34px}
+.step{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:16px;display:flex;gap:10px;align-items:flex-start;font-size:14px}
+.about,.contact{padding:55px 0}
+.about-grid,.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:start}
+.about p,.contact p{color:var(--muted);margin-top:10px}
+.service-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.service{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;font-size:14px}
+.contact-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 10px 30px rgba(122,47,69,.05)}
+.contact-card h3{margin-bottom:10px}
+.contact-card a{color:var(--wine);font-weight:700}
+footer{background:#2b1b21;color:#f7ebe8;padding:40px 0 24px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:24px;margin-bottom:24px}
+.footer-brand{font-size:28px;font-weight:800;color:#fff;margin-bottom:8px}
+.footer-sub{opacity:.8;margin-bottom:10px}
+.footer-col h4{margin-bottom:10px;color:#fff}
+.footer-col a,.footer-col p{display:block;opacity:.8;margin-bottom:7px;font-size:14px}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:16px;font-size:13px;opacity:.7;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.modal{position:fixed;inset:0;background:rgba(30,15,20,.55);display:none;align-items:center;justify-content:center;padding:18px;z-index:50;opacity:0;transition:opacity 0.3s ease}
+.modal.open{display:flex;opacity:1}
+.modal-panel{background:#fff;border-radius:24px;overflow:hidden;width:min(100%,920px);display:grid;grid-template-columns:1.05fr .95fr;max-height:90vh}
+.modal-image{background:#f7ece8;min-height:360px}
+.modal-image img{width:100%;height:100%;object-fit:cover}
+.modal-content{padding:28px;overflow:auto}
+.modal-close{position:absolute;top:14px;right:18px;border:0;background:rgba(255,255,255,.9);width:38px;height:38px;border-radius:50%;font-size:20px;cursor:pointer}
+.modal-content .card-type{margin-bottom:8px}
+.modal-content h3{font-size:34px;line-height:1.1;margin-bottom:8px}
+.modal-content .price{font-size:24px;margin-bottom:12px}
+.modal-content p{color:var(--muted);margin-bottom:18px}
+.modal-content .order-btn{width:100%;border:0;background:var(--wine);color:#fff;border-radius:14px;padding:14px;font-weight:700;font-size:15px;cursor:pointer}
+.modal-perks{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;font-size:13px;color:#6b5360}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#1f1a1c;color:#fff;padding:12px 18px;border-radius:999px;font-size:13px;display:none;z-index:60}
+@media(max-width:1100px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.how-grid{grid-template-columns:1fr 1fr}.modal-panel{grid-template-columns:1fr}}
+@media(max-width:700px){header{height:66px}.shell{width:min(100% - 28px,1400px)}.navlinks{display:none}.menu{display:block}.wa-top{padding:10px 12px;font-size:12px}.brand{font-size:25px}.brand-logo{width:43px;height:43px}.hero,.hero-inner{min-height:360px}.hero-copy{padding:35px 0}.hero p{font-size:14px}.hero-perks{gap:13px;font-size:11px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.photo{height:160px}.card-info{padding:10px}.card h3{font-size:17px;min-height:42px}.price{font-size:16px}.card .order-btn{font-size:11px;padding:9px 5px}.filters{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:5px}.filter{white-space:nowrap}.about-grid,.contact-grid,.footer-grid{grid-template-columns:1fr;gap:20px}.service-list{grid-template-columns:1fr 1fr}.modal-panel{grid-template-columns:1fr;max-width:480px}.modal-image{height:260px;min-height:0}.modal-content{padding:22px}.modal-content h3{font-size:30px}.how-grid{grid-template-columns:1fr 1fr}.step{font-size:12px}.how-title{font-size:32px}}
+
+/* ===== Animations ===== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes toastIn {
+  from { opacity: 0; transform: translate(-50%, 20px); }
+  to   { opacity: 1; transform: translate(-50%, 0); }
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.04); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Hero entrance */
+.hero-copy {
+  animation: fadeInUp 0.8s ease-out both;
+}
+.hero .eyebrow { animation: fadeInUp 0.6s 0.1s ease-out both; }
+.hero h1       { animation: fadeInUp 0.7s 0.2s ease-out both; }
+.hero p        { animation: fadeInUp 0.7s 0.3s ease-out both; }
+.hero-actions  { animation: fadeInUp 0.7s 0.4s ease-out both; }
+.hero-perks    { animation: fadeInUp 0.7s 0.5s ease-out both; }
+
+/* Header */
+header {
+  animation: slideDown 0.5s ease-out both;
+}
+
+/* Cards */
+.card {
+  opacity: 0;
+  animation: fadeInUp 0.55s ease-out both;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(122,47,69,0.12);
+}
+.card .photo img {
+  transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.card:hover .photo img {
+  transform: scale(1.07);
+}
+.card .order-btn {
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+.card .order-btn:hover {
+  background: #5e2436;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(122,47,69,0.25);
+}
+.card .order-btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Filter buttons */
+.filter {
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
+}
+.filter:hover {
+  transform: translateY(-2px);
+}
+.filter:active {
+  transform: scale(0.96);
+}
+
+/* Buttons */
+.btn, .wa-top {
+  transition: transform 0.2s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+.btn:hover, .wa-top:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.btn:active, .wa-top:active {
+  transform: scale(0.97);
+}
+.btn-white:hover {
+  background: #fff5f7;
+}
+
+/* Modal panel scale animation */
+.modal-panel {
+  transform: scale(0.94);
+  opacity: 0;
+  transition: transform 0.35s cubic-bezier(0.34, 1.2, 0.64, 1), opacity 0.3s ease;
+}
+.modal.open .modal-panel {
+  transform: scale(1);
+  opacity: 1;
+}
+.modal-close {
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.modal-close:hover {
+  background: #fff;
+  transform: rotate(90deg);
+}
+
+/* Toast */
+.toast {
+  animation: toastIn 0.35s ease-out both;
+}
+
+/* Search box */
+.searchbox {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.searchbox:focus-within {
+  border-color: #d4a0ad;
+  box-shadow: 0 8px 28px rgba(122,47,69,0.1);
+}
+
+/* Section titles */
+.catalog-head, .how-title, .about h2, .contact h2 {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+/* Stagger helper (applied via JS) */
+.card.animate-in {
+  animation: fadeInUp 0.55s ease-out both;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+
+/* Logo polish */
+.brand-logo{
+  width:52px;height:52px;border-radius:50%;object-fit:cover;
+  border:2px solid #e8c9a0;box-shadow:0 2px 10px rgba(122,47,69,.15);
+  background:#0d3b2e;
+}
+@media(max-width:700px){.brand-logo{width:44px;height:44px}}
+
+/* Hero with carousel */
+.hero{
+  position:relative;min-height:520px;
+  background:linear-gradient(120deg,#7a2f45 0%,#a94d68 45%,#d27a8f 100%);
+  color:#fff;overflow:hidden;
+}
+.hero-inner{
+  min-height:520px;
+  display:grid;
+  grid-template-columns:1.05fr 0.95fr;
+  align-items:center;
+  gap:28px;
+}
+.hero-copy{padding:50px 0 40px;max-width:640px;position:relative;z-index:2}
+.hero-slider{
+  position:relative;
+  height:420px;
+  border-radius:28px;
+  overflow:hidden;
+  box-shadow:0 20px 50px rgba(0,0,0,.25);
+  border:3px solid rgba(255,255,255,.25);
+}
+.hero-slider .slide{
+  position:absolute;inset:0;
+  opacity:0;
+  transition:opacity 1s ease, transform 1.2s ease;
+  transform:scale(1.06);
+}
+.hero-slider .slide.active{
+  opacity:1;
+  transform:scale(1);
+  z-index:1;
+}
+.hero-slider .slide img{
+  width:100%;height:100%;object-fit:cover;display:block;
+}
+.hero-slider .slide-caption{
+  position:absolute;left:0;right:0;bottom:0;
+  padding:18px 20px 16px;
+  background:linear-gradient(transparent, rgba(0,0,0,.65));
+  font-size:15px;font-weight:600;
+  z-index:2;
+}
+.slider-dots{
+  position:absolute;bottom:12px;right:14px;z-index:3;
+  display:flex;gap:6px;
+}
+.slider-dots span{
+  width:8px;height:8px;border-radius:50%;
+  background:rgba(255,255,255,.45);
+  cursor:pointer;transition:all .25s ease;
+}
+.slider-dots span.active{
+  background:#fff;transform:scale(1.25);
+}
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;min-height:auto}
+  .hero-slider{height:280px;order:-1;margin-top:24px}
+  .hero-copy{padding:20px 0 36px}
+  .hero{min-height:auto}
+}
+
+/* Offer Popup */
+.offer-overlay{
+  position:fixed;inset:0;background:rgba(20,10,15,.55);
+  z-index:100;display:flex;align-items:center;justify-content:center;
+  padding:18px;opacity:0;pointer-events:none;
+  transition:opacity .4s ease;
+}
+.offer-overlay.show{
+  opacity:1;pointer-events:auto;
+}
+.offer-box{
+  background:#fff;border-radius:24px;width:min(100%,420px);
+  overflow:hidden;box-shadow:0 25px 60px rgba(0,0,0,.3);
+  transform:scale(0.85) translateY(30px);
+  transition:transform .45s cubic-bezier(0.34,1.3,0.64,1);
+  position:relative;
+}
+.offer-overlay.show .offer-box{
+  transform:scale(1) translateY(0);
+}
+.offer-banner{
+  background:linear-gradient(135deg,#7a2f45,#c45c7a);
+  color:#fff;padding:28px 24px 22px;text-align:center;
+  position:relative;overflow:hidden;
+}
+.offer-banner::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 20% 50%,rgba(255,255,255,.12),transparent 50%);
+}
+.offer-banner .badge{
+  display:inline-block;background:rgba(255,255,255,.2);
+  border:1px solid rgba(255,255,255,.35);
+  padding:4px 12px;border-radius:999px;font-size:11px;
+  letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;
+}
+.offer-banner h3{
+  font-size:26px;margin:0 0 6px;letter-spacing:-.02em;
+}
+.offer-banner p{margin:0;opacity:.92;font-size:14px}
+.offer-body{padding:22px 24px 26px;text-align:center}
+.offer-body .deal{
+  font-size:15px;color:#5c4450;margin-bottom:16px;line-height:1.5;
+}
+.offer-body .deal strong{color:var(--wine)}
+.offer-body .offer-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  background:var(--wine);color:#fff;border:0;border-radius:999px;
+  padding:13px 28px;font-size:15px;font-weight:700;cursor:pointer;
+  text-decoration:none;transition:transform .2s ease, box-shadow .25s ease;
+}
+.offer-body .offer-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 24px rgba(122,47,69,.3);
+}
+.offer-close{
+  position:absolute;top:12px;right:12px;width:34px;height:34px;
+  border-radius:50%;border:0;background:rgba(255,255,255,.25);
+  color:#fff;font-size:18px;cursor:pointer;display:flex;
+  align-items:center;justify-content:center;z-index:2;
+  transition:background .2s, transform .2s;
+}
+.offer-close:hover{background:rgba(255,255,255,.4);transform:rotate(90deg)}
+
+</style>
+</head>
+<body>
+<header>
+ <div class="shell nav">
+  <a class="brand" href="#home"><img class="brand-logo" src="logo.jpeg" alt="Magic Flowers"> Magic Flowers</a>
+  <nav class="navlinks">
+   <a href="#home">Home</a>
+   <a href="#catalog">Catalog</a>
+   <a href="#about">About</a>
+   <a href="#contact">Contact</a>
+  </nav>
+  <button class="wa-top" onclick="window.open('https://wa.me/919111759996','_blank')">WhatsApp Order</button>
+ </div>
+</header>
+
+<section class="hero" id="home">
+ <div class="shell hero-inner">
+  <div class="hero-copy">
+   <div class="eyebrow">Bhopal • Fresh Flowers Daily</div>
+   <h1>Beautiful bouquets, birthday setups & wedding decorations</h1>
+   <p>Handcrafted flower arrangements, balloon decorations, chocolate gifts and special occasion setups — delivered with care across Bhopal.</p>
+   <div class="hero-actions">
+    <a class="btn btn-white" href="#catalog">Browse Catalog</a>
+    <a class="btn btn-outline" href="https://wa.me/919111759996" target="_blank" rel="noopener">Order on WhatsApp</a>
+   </div>
+   <div class="hero-perks">
+    <span>✿ Fresh flowers every day</span>
+    <span>🎈 Birthday & Wedding Decor</span>
+    <span>🚚 Same-day delivery</span>
+   </div>
+  </div>
+  <div class="hero-slider" id="heroSlider">
+    <div class="slide active">
+      <img src="images/img-24.jpeg" alt="Pink Lily Purple Statice Tall Bouquet">
+      <div class="slide-caption">Pink Lily Purple Statice Tall Bouquet</div>
+    </div>
+    <div class="slide">
+      <img src="images/img-47.jpeg" alt="Pink Lily Rose Basket Arrangement">
+      <div class="slide-caption">Pink Lily Rose Basket Arrangement</div>
+    </div>
+    <div class="slide">
+      <img src="images/img-31.jpeg" alt="Orange Lily White Carnation Bouquet">
+      <div class="slide-caption">Orange Lily White Carnation Bouquet</div>
+    </div>
+    <div class="slide">
+      <img src="images/img-03.jpeg" alt="Birthday Decoration">
+      <div class="slide-caption">Birthday Balloon Arch Decorations</div>
+    </div>
+    <div class="slide">
+      <img src="images/img-02.jpeg" alt="Teddy Bear Chocolate Gift Arrangement">
+      <div class="slide-caption">Teddy Bear Chocolate Gift Arrangement</div>
+    </div>
+    <div class="slide">
+      <img src="images/img-33.jpeg" alt="Blue Rose Baby Breath Clear Wrap">
+      <div class="slide-caption">Blue Rose Baby Breath Clear Wrap</div>
+    </div>
+    <div class="slide">
+      <img src="images/img-10.jpeg" alt="Baby Decoration">
+      <div class="slide-caption">Baby Boy Welcome Decorations</div>
+    </div>
+    <div class="slide">
+      <img src="images/img-25.jpeg" alt="Pink Lily Birthday Basket with Cadbury">
+      <div class="slide-caption">Pink Lily Birthday Basket with Cadbury</div>
+    </div>
+    <div class="slider-dots" id="sliderDots"></div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="catalog">
+ <div class="shell">
+  <div class="catalog-head">
+   <div class="eyebrow">Fresh Flowers, Decorations & Gifts</div>
+   <h2>Our Catalog</h2>
+   <p>Find the perfect flowers, bouquets and decorations for every special moment.</p>
+  </div>
+  <div class="search-row">
+   <label class="searchbox">⌕ <input id="search" type="search" placeholder="Search flowers, bouquets, birthday decor..."></label>
+  </div>
+  <div class="filters" aria-label="Filter products">
+   <button class="filter active" data-filter="all">All Items</button>
+   <button class="filter" data-filter="Bouquets">Bouquets</button>
+   <button class="filter" data-filter="Arrangements">Arrangements</button>
+   <button class="filter" data-filter="Decorations">Decorations</button>
+   <button class="filter" data-filter="Chocolate & Gifts">Chocolate & Gifts</button>
+   <button class="filter" data-filter="Special Gifts">Special Gifts</button>
+  </div>
+  <div class="grid" id="productGrid"></div>
+  <div class="no-results" id="noResults">No products found. Try another search.</div>
+ </div>
+</section>
+
+<section class="how">
+ <div class="shell how-grid">
+  <div class="how-title">How to Order?</div>
+  <div class="step"><b>①</b><span>Tap <strong>Order on WhatsApp</strong></span></div>
+  <div class="step"><b>②</b><span>Share product name & delivery details</span></div>
+  <div class="step"><b>③</b><span>We confirm & deliver fresh to you</span></div>
+ </div>
+</section>
+
+<section class="about" id="about">
+ <div class="shell about-grid">
+  <div>
+   <div class="eyebrow">About Magic Flowers</div>
+   <h2>Fresh flowers, tied with care</h2>
+   <p>Magic Flowers creates beautiful bouquets, premium arrangements, birthday & wedding decorations, and thoughtful gifts for every occasion in Bhopal.</p>
+   <div class="service-list">
+    <div class="service">🌸 Fresh Flower Bouquets</div>
+    <div class="service">🎈 Birthday Decorations</div>
+    <div class="service">💒 Wedding & Event Setup</div>
+    <div class="service">🕯 Puja & Festival Decor</div>
+    <div class="service">🍫 Chocolate Gift Boxes</div>
+    <div class="service">🎁 Special Occasion Gifts</div>
+   </div>
+  </div>
+  <div class="contact-card">
+   <h3>Why choose us?</h3>
+   <p>✓ Hand-tied fresh bouquets daily<br>✓ Custom birthday & wedding decorations<br>✓ Premium packing & presentation<br>✓ Friendly WhatsApp ordering<br>✓ Local delivery across Bhopal</p>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <div class="shell contact-grid">
+  <div>
+   <div class="eyebrow">Contact</div>
+   <h2>Order via WhatsApp</h2>
+   <p>Message us with the product name or send a photo of what you like. We’ll confirm availability, price and delivery.</p>
+  </div>
+  <div class="contact-card">
+   <h3>Magic Flowers</h3>
+   <p>Bawadiya Kala Huzur, Bhopal</p>
+   <p><a href="https://wa.me/919111759996" target="_blank" rel="noopener">WhatsApp: +91 91117 59996</a></p>
+   <p style="margin-top:14px"><button class="wa-top" onclick="window.open('https://wa.me/919111759996','_blank')">Chat on WhatsApp</button></p>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="shell">
+  <div class="footer-grid">
+   <div>
+    <div class="footer-brand">Magic Flowers</div>
+    <div class="footer-sub">Fresh Flowers · Bouquets · Decorations · Gifts</div>
+    <p>Fresh flowers, tied with care. Every bouquet and decoration is prepared like it’s the only one we made today.</p>
+   </div>
+   <div class="footer-col">
+    <h4>Quick Links</h4>
+    <a href="#catalog">Catalog</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+   </div>
+   <div class="footer-col">
+    <h4>Order</h4>
+    <a href="https://wa.me/919111759996" target="_blank" rel="noopener">WhatsApp Order</a>
+    <p>Bhopal Local Delivery</p>
+   </div>
+  </div>
+  <div class="footer-bottom">
+   <span>© 2026 Magic Flowers. All rights reserved.</span>
+   <span>Made with ♥ in Bhopal</span>
+  </div>
+ </div>
+</footer>
+
+<div class="modal" id="productModal">
+ <button class="modal-close" onclick="closeModal()" aria-label="Close">×</button>
+ <div class="modal-panel">
+  <div class="modal-image"><img id="modalImage" alt=""></div>
+  <div class="modal-content">
+   <div class="card-type" id="modalType"></div>
+   <h3 id="modalName"></h3>
+   <div class="price" id="modalPrice"></div>
+   <p>Beautifully arranged and carefully prepared by Magic Flowers. Please message us to confirm availability and delivery.</p>
+   <button class="order-btn" id="modalOrder">☏ Order on WhatsApp</button>
+   <div class="modal-perks"><span>✿ Fresh flowers</span><span>🎁 Premium packing</span><span>🚚 Local delivery</span></div>
+  </div>
+ </div>
+</div>
+<div class="toast" id="toast">Opening WhatsApp with your order details…</div>
+
+<script>
+const PRODUCTS = [
+  // ========== BOUQUETS ==========
+  {"name":"Pink & White Lily Rose Bouquet","price":"₹1,499","old":"","type":"Bouquets","image":"images/img-01.jpeg"},
+  {"name":"Purple Hydrangea Mixed Bouquet","price":"₹2,299","old":"","type":"Bouquets","image":"images/img-04.jpeg"},
+  {"name":"Classic Red Rose Bouquet Black Wrap","price":"₹1,299","old":"","type":"Bouquets","image":"images/img-14.jpeg"},
+  {"name":"Red Rose Hand Bouquet White Ribbon","price":"₹899","old":"","type":"Bouquets","image":"images/img-15.jpeg"},
+  {"name":"Bright Sunflower Yellow Wrap Bouquet","price":"₹1,199","old":"","type":"Bouquets","image":"images/img-16.jpeg"},
+  {"name":"White Lily & Carnation Kraft Bouquet","price":"₹1,599","old":"","type":"Bouquets","image":"images/img-17.jpeg"},
+  {"name":"Yellow Lily & Sunflower Black Wrap","price":"₹1,899","old":"","type":"Bouquets","image":"images/img-18.jpeg"},
+  {"name":"Pastel Lily Chrysanthemum Bouquet","price":"₹1,699","old":"","type":"Bouquets","image":"images/img-19.jpeg"},
+  {"name":"Colorful Lily Sunflower Red Wrap","price":"₹1,799","old":"","type":"Bouquets","image":"images/img-20.jpeg"},
+  {"name":"Orange Yellow White Lily Bouquet","price":"₹1,999","old":"","type":"Bouquets","image":"images/img-21.jpeg"},
+  {"name":"Pink Lily Sunflower Teal Wrap Bouquet","price":"₹1,849","old":"","type":"Bouquets","image":"images/img-22.jpeg"},
+  {"name":"Sunflower White Daisy Kraft Bouquet","price":"₹1,399","old":"","type":"Bouquets","image":"images/img-23.jpeg"},
+  {"name":"Pink Lily Purple Statice Tall Bouquet","price":"₹2,199","old":"","type":"Bouquets","image":"images/img-24.jpeg"},
+  {"name":"Pink Lily Red Carnation Floor Bouquet","price":"₹2,499","old":"","type":"Bouquets","image":"images/img-26.jpeg"},
+  {"name":"Sunflower White Chrysanthemum Black Wrap","price":"₹1,999","old":"","type":"Bouquets","image":"images/img-27.jpeg"},
+  {"name":"Orange Lily White Carnation Bouquet","price":"₹1,799","old":"","type":"Bouquets","image":"images/img-28.jpeg"},
+  {"name":"White Lily Purple Carnation Lavender Wrap","price":"₹1,899","old":"","type":"Bouquets","image":"images/img-29.jpeg"},
+  {"name":"Red Carnation Round Black Gold Bouquet","price":"₹2,299","old":"","type":"Bouquets","image":"images/img-30.jpeg"},
+  {"name":"Single Red Rose Designer Pack","price":"₹499","old":"","type":"Bouquets","image":"images/img-32.jpeg"},
+  {"name":"Blue Rose Baby Breath Clear Wrap","price":"₹799","old":"","type":"Bouquets","image":"images/img-33.jpeg"},
+  {"name":"Bright Orange Lily Large Bouquet","price":"₹2,199","old":"","type":"Bouquets","image":"images/img-34.jpeg"},
+  {"name":"Heart Shape Red Rose Bouquet","price":"₹2,999","old":"","type":"Special Gifts","image":"images/img-35.jpeg"},
+  {"name":"Single Sunflower Green Mesh Bouquet","price":"₹699","old":"","type":"Bouquets","image":"images/img-36.jpeg"},
+  {"name":"Pink White Lily Carnation Soft Bouquet","price":"₹1,699","old":"","type":"Bouquets","image":"images/img-37.jpeg"},
+  {"name":"Pink Lily Rose Soft Pink Wrap Bouquet","price":"₹1,899","old":"","type":"Bouquets","image":"images/img-38.jpeg"},
+  {"name":"Pink Lily Orchid Mixed Tall Bouquet","price":"₹2,399","old":"","type":"Bouquets","image":"images/img-39.jpeg"},
+  {"name":"Multicolor Rose Chrysanthemum Bouquet","price":"₹1,799","old":"","type":"Bouquets","image":"images/img-40.jpeg"},
+  {"name":"Pink Stargazer Lily Rose Bouquet","price":"₹1,999","old":"","type":"Bouquets","image":"images/img-41.jpeg"},
+  {"name":"Sunshine Sunflower Black Pattern Bouquet","price":"₹1,899","old":"","type":"Bouquets","image":"images/img-42.jpeg"},
+  {"name":"White Lily Eucalyptus Cream Bouquet","price":"₹1,499","old":"","type":"Bouquets","image":"images/img-43.jpeg"},
+  {"name":"Pink Rose Lily Soft Peach Bouquet","price":"₹1,699","old":"","type":"Bouquets","image":"images/img-44.jpeg"},
+  {"name":"Rainbow Gerbera Lily Pink Wrap Bouquet","price":"₹1,899","old":"","type":"Bouquets","image":"images/img-46.jpeg"},
+   {"name":"Pink Lily Mixed Bouquet Black Love Wrap","price":"₹1,799","old":"","type":"Bouquets","image":"images/img-49.jpeg"},
+
+  // ========== ARRANGEMENTS ==========
+  {"name":"Pink Lily Rose Basket Arrangement","price":"₹2,299","old":"","type":"Arrangements","image":"images/img-45.jpeg"},
+  {"name":"Pink Lily Box Arrangement Magic Flowers","price":"₹2,999","old":"","type":"Arrangements","image":"images/img-47.jpeg"},
+  {"name":"Heart Red Rose Stand with Lily Base","price":"₹3,499","old":"","type":"Arrangements","image":"images/img-48.jpeg"},
+  {"name":"Pink Lily Birthday Basket with Cadbury","price":"₹2,799","old":"","type":"Arrangements","image":"images/img-25.jpeg"},
+
+  // ========== CHOCOLATE & GIFTS ==========
+  {"name":"Teddy Bear Chocolate Gift Arrangement","price":"₹1,899","old":"","type":"Chocolate & Gifts","image":"images/img-02.jpeg"},
+
+  // ========== DECORATIONS ==========
+  {"name":"Green Pink Balloon Birthday Arch - Malkin","price":"₹6,999","old":"","type":"Decorations","image":"images/img-03.jpeg"},
+  {"name":"Frozen Theme Birthday Decoration - Sejal","price":"₹12,999","old":"","type":"Decorations","image":"images/img-05.jpeg"},
+  {"name":"Pink Purple Balloon Circle Birthday Arch","price":"₹5,499","old":"","type":"Decorations","image":"images/img-06.jpeg"},
+  {"name":"Pastel Rainbow Balloon Arch Setup","price":"₹7,499","old":"","type":"Decorations","image":"images/img-07.jpeg"},
+  {"name":"Baby Boy Welcome Decoration with Rangoli","price":"₹4,999","old":"","type":"Decorations","image":"images/img-08.jpeg"},
+  {"name":"Black Gold Sequin Birthday Backdrop","price":"₹8,999","old":"","type":"Decorations","image":"images/img-09.jpeg"},
+  {"name":"Baby Boy Teddy Balloon Cloud Setup","price":"₹9,999","old":"","type":"Decorations","image":"images/img-10.jpeg"},
+  {"name":"Mukku Birthday Pink Purple Butterfly Arch","price":"₹6,499","old":"","type":"Decorations","image":"images/img-11.jpeg"},
+  {"name":"Orange Pink Silver Birthday Balloon Arch","price":"₹5,999","old":"","type":"Decorations","image":"images/img-12.jpeg"},
+  {"name":"Baby Shower Gender Reveal Balloon Arch","price":"₹7,999","old":"","type":"Decorations","image":"images/img-13.jpeg"},
+
+ 
+];
+
+const WA_NUMBER = "919111759996";
+const grid = document.getElementById("productGrid");
+let activeFilter = "all";
+let currentProduct = null;
+
+function categoryFor(p){
+  const n = (p.name || "").toLowerCase();
+  const t = (p.type || "").toLowerCase();
+  if (t.includes("decoration") || n.includes("balloon") || n.includes("birthday") || n.includes("wedding") || n.includes("puja") || n.includes("baby shower") || n.includes("backdrop") || n.includes("arch")) return "Decorations";
+  if (n.includes("heart")) return "Special Gifts";
+  if (t.includes("indoor")) return "Indoor Plants";
+  if (t.includes("chocolate")) return "Chocolate & Gifts";
+  if (t.includes("arrangement")) return "Arrangements";
+  return "Bouquets";
+}
+
+function cleanPrice(s){ return s ? s.replace(/\s+/g," ").trim() : "Ask for Price"; }
+
+function whatsappOrder(p){
+  const price = cleanPrice(p.price);
+  const message = `Hello Magic Flowers! I would like to order this product:
+
+Product: ${p.name}
+Price: ${price}
+
+Please confirm availability and delivery. Kindly let me know the delivery details you need.`;
+  window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`,"_blank","noopener");
+  document.getElementById("toast").style.display = "block";
+  setTimeout(() => document.getElementById("toast").style.display = "none", 2500);
+}
+
+function showProduct(i){
+  const p = PRODUCTS[i];
+  currentProduct = p;
+  document.getElementById("modalImage").src = p.image;
+  document.getElementById("modalImage").alt = p.name;
+  document.getElementById("modalName").textContent = p.name;
+  document.getElementById("modalType").textContent = categoryFor(p);
+  document.getElementById("modalPrice").textContent = cleanPrice(p.price);
+  document.getElementById("modalOrder").onclick = () => whatsappOrder(p);
+  const modal = document.getElementById("productModal");
+  modal.style.display = "flex";
+  // force reflow then open for animation
+  requestAnimationFrame(() => {
+    modal.classList.add("open");
+  });
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal(){
+  const modal = document.getElementById("productModal");
+  modal.classList.remove("open");
+  document.body.style.overflow = "";
+  // hide after transition
+  setTimeout(() => {
+    if (!modal.classList.contains("open")) {
+      modal.style.display = "none";
+    }
+  }, 300);
+}
+
+function render(){
+  const q = document.getElementById("search").value.toLowerCase().trim();
+  const filtered = PRODUCTS.map((p,i) => ({...p, index:i})).filter(p => {
+    const matchType = activeFilter === "all" || categoryFor(p) === activeFilter;
+    const matchSearch = (p.name + " " + p.type).toLowerCase().includes(q);
+    return matchType && matchSearch;
+  });
+  grid.innerHTML = filtered.map((p, idx) => `
+    <article class="card" style="animation-delay:${Math.min(idx * 0.05, 0.4)}s">
+      <button class="photo" type="button" aria-label="View ${escapeHtml(p.name)}" onclick="showProduct(${p.index})">
+        <img loading="lazy" src="${p.image}" alt="${escapeHtml(p.name)}">
+      </button>
+      <div class="card-info">
+        <div class="card-type">${escapeHtml(categoryFor(p))}</div>
+        <h3>${escapeHtml(p.name)}</h3>
+        <div class="price-line">
+          <span class="${p.price ? 'price' : 'ask'}">${escapeHtml(cleanPrice(p.price))}</span>
+          ${p.old ? `<del class="old">${escapeHtml(p.old)}</del>` : ""}
+        </div>
+        <button class="order-btn" type="button" onclick="whatsappOrder(PRODUCTS[${p.index}])">☏ &nbsp;Order on WhatsApp</button>
+      </div>
+    </article>`).join("");
+  document.getElementById("noResults").style.display = filtered.length ? "none" : "block";
+}
+
+function escapeHtml(s){
+  return String(s||"").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+
+document.querySelectorAll(".filter").forEach(btn => btn.addEventListener("click", () => {
+  document.querySelectorAll(".filter").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  activeFilter = btn.dataset.filter;
+  render();
+}));
+
+document.getElementById("search").addEventListener("input", render);
+document.getElementById("productModal").addEventListener("click", e => {
+  if (e.target.id === "productModal") closeModal();
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") closeModal();
+});
+
+render();
+
+/* ===== Hero Slider (auto loop) ===== */
+(function(){
+  const slides = document.querySelectorAll("#heroSlider .slide");
+  const dotsWrap = document.getElementById("sliderDots");
+  if (!slides.length) return;
+  let current = 0;
+  let timer;
+
+  slides.forEach((_, i) => {
+    const dot = document.createElement("span");
+    if (i === 0) dot.classList.add("active");
+    dot.addEventListener("click", () => goTo(i));
+    dotsWrap.appendChild(dot);
+  });
+  const dots = dotsWrap.querySelectorAll("span");
+
+  function goTo(i){
+    slides[current].classList.remove("active");
+    dots[current].classList.remove("active");
+    current = i;
+    slides[current].classList.add("active");
+    dots[current].classList.add("active");
+    resetTimer();
+  }
+  function next(){
+    goTo((current + 1) % slides.length);
+  }
+  function resetTimer(){
+    clearInterval(timer);
+    timer = setInterval(next, 3200);
+  }
+  resetTimer();
+})();
+
+/* ===== Offer Popup ===== */
+function closeOffer(){
+  const el = document.getElementById("offerPopup");
+  if (el) el.classList.remove("show");
+}
+// Show offer after 2.5 seconds (only once per session)
+setTimeout(() => {
+  if (!sessionStorage.getItem("mf_offer_seen")) {
+    const el = document.getElementById("offerPopup");
+    if (el) {
+      el.classList.add("show");
+      sessionStorage.setItem("mf_offer_seen", "1");
+    }
+  }
+}, 2500);
+// Close on overlay click
+document.getElementById("offerPopup")?.addEventListener("click", e => {
+  if (e.target.id === "offerPopup") closeOffer();
+});
+
+</script>
+
+<!-- Special Offer Popup -->
+<div class="offer-overlay" id="offerPopup">
+  <div class="offer-box">
+    <button class="offer-close" onclick="closeOffer()" aria-label="Close">×</button>
+    <div class="offer-banner">
+      <div class="badge">Limited Time Offer</div>
+      <h3>Special Festival Deal 🌸</h3>
+      <p>Fresh flowers & decorations for every celebration</p>
+    </div>
+    <div class="offer-body">
+      <div class="deal">
+        Get <strong>10% OFF</strong> on all bouquets<br>
+        &amp; <strong>Free delivery</strong> on orders above ₹1,999
+      </div>
+      <a class="offer-btn" href="https://wa.me/919111759996?text=Hi%20Magic%20Flowers!%20I%20want%20the%20Special%20Festival%20Deal%20(10%25%20OFF)" target="_blank" rel="noopener" onclick="closeOffer()">
+        ☏ Claim Offer on WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
